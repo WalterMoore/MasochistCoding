@@ -2,19 +2,17 @@
 <html lang="en">
 	<head>
 		<title>An exercise to do simple things in unnecessarily complicated ways</title>
-		<style>
-			body {background-color: darkblue; color: cadetblue; font-size: 4vw;}
-			p {font-size: 2vw;}
-		</style>
 	</head>
 	<body>
 		<span id="zip">l</span>
 		<span id="zap">r</span>
-		<p>The greeting above was done with 10 lines of JavaScript, just because.</p>
+		<p>This greeting was done with 18 lines of JavaScript, just because.</p>
 		
 		<script>
 		var zip = document.getElementById("zip");
 		var zap = document.getElementById("zap");
+		var bodyStyle = document.querySelector("body").style;
+		var pStyle = document.querySelector("p").style;
 		
 		zip.insertAdjacentHTML("beforebegin", "<span>H</span>");
 		zip.insertAdjacentHTML("afterbegin", "<span>e</span>");
@@ -25,6 +23,11 @@
 		zap.insertAdjacentHTML("afterbegin", "<span>o</span>");
 		zap.insertAdjacentHTML("beforeend", "<span>l</span>");
 		zap.insertAdjacentHTML("afterend", "<span>d</span>");
+		
+		bodyStyle.setProperty("background-color", "darkblue");
+		bodyStyle.setProperty("color", "cadetblue");
+		bodyStyle.setProperty("font-size", "4vw");
+		pStyle.setProperty("font-size", "2vw");
 			
 			
 		</script>
