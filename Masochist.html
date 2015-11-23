@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>An exercise to do simple things in unnecessarily complicated ways</title>
+		<style>
+			body {background-color: darkblue; color: cadetblue; font-size: 4vw;}
+			p {font-size: 2vw;}
+		</style>
+	</head>
+	<body>
+		<span id="zip">l</span>
+		<span id="zap">r</span>
+		<p>The greeting above was done with 10 lines of JavaScript, just because.</p>
+		
+		<script>
+		var zip = document.getElementById("zip");
+		var zap = document.getElementById("zap");
+		
+		zip.insertAdjacentHTML("beforebegin", "<span>H</span>");
+		zip.insertAdjacentHTML("afterbegin", "<span>e</span>");
+		zip.insertAdjacentHTML("beforeend", "<span>l</span>");
+		zip.insertAdjacentHTML("afterend", "<span>o</span>");
+			
+		zap.insertAdjacentHTML("beforebegin", "<span>W</span>");
+		zap.insertAdjacentHTML("afterbegin", "<span>o</span>");
+		zap.insertAdjacentHTML("beforeend", "<span>l</span>");
+		zap.insertAdjacentHTML("afterend", "<span>d</span>");
+			
+			
+		</script>
+		
+	</body>
+</html>
